@@ -2,10 +2,6 @@
 
 'use strict';
 
-goog.provide('Blockly.Msg.lt');
-
-goog.require('Blockly.Msg');
-
 Blockly.Msg["ADD_COMMENT"] = "Palikti komentarą";
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Negalima ištrinti kintamojo '%1', nes jis yra dalis funkcijos '%2'";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Keisti reikšmę:";
@@ -74,6 +70,19 @@ Blockly.Msg["ENABLE_BLOCK"] = "Įjungti bloką";
 Blockly.Msg["EXPAND_ALL"] = "Išskleisti blokus";
 Blockly.Msg["EXPAND_BLOCK"] = "Išskleisti bloką";
 Blockly.Msg["EXTERNAL_INPUTS"] = "Išdėstyti stulpeliu, kai daug parametrų";
+Blockly.Msg["FUNCTIONS_CALL_TITLE"] = "call";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_BOOLEAN_ARG_NAME"] = "bool";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_CUSTOM_ARG_NAME"] = "arg";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_FUNCTION_NAME"] = "do_something";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_NUMBER_ARG_NAME"] = "num";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_STRING_ARG_NAME"] = "text";  // untranslated
+Blockly.Msg["FUNCTIONS_EDIT_OPTION"] = "Edit";  // untranslated
+Blockly.Msg["FUNCTIONS_GO_TO_DEFINITION_OPTION"] = "Go to definition";  // untranslated
+Blockly.Msg["FUNCTION_CALL_TOOLTIP"] = "Call a function that was previously defined.";  // untranslated
+Blockly.Msg["FUNCTION_CREATE_NEW"] = "Create a Function";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_ARG_NAME_IS_FUNCTION_NAME"] = "Argument names must not be the same as the function name.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_DUPLICATE_ARG"] = "Functions cannot use the same argument name more than once.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_EMPTY_NAME"] = "Function and argument names cannot be empty.";  // untranslated
 Blockly.Msg["HELP"] = "Pagalba";
 Blockly.Msg["INLINE_INPUTS"] = "Išdėstyti vienoje eilutėje";
 Blockly.Msg["IOS_CANCEL"] = "Atšaukti";
@@ -324,7 +333,7 @@ Blockly.Msg["REMOVE_COMMENT"] = "Pašalinti komentarą";
 Blockly.Msg["RENAME_VARIABLE"] = "Pervardyti kintamajį...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Pervadinti visus '%1' kintamuosius į:";
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
-Blockly.Msg["TEXT_APPEND_TITLE"] = "prie %1 pridėk tekstą %2";
+Blockly.Msg["TEXT_APPEND_TITLE"] = "to %1 append text %2";  // untranslated
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Pridėti tekstą prie kintamojo '%1'.";
 Blockly.Msg["TEXT_CHANGECASE_HELPURL"] = "https://github.com/google/blockly/wiki/Text#adjusting-text-case";  // untranslated
 Blockly.Msg["TEXT_CHANGECASE_OPERATOR_LOWERCASE"] = " mažosiom raidėm";
@@ -359,7 +368,7 @@ Blockly.Msg["TEXT_GET_SUBSTRING_TOOLTIP"] = "Grąžina tam tikrą teksto dalį."
 Blockly.Msg["TEXT_INDEXOF_HELPURL"] = "https://github.com/google/blockly/wiki/Text#finding-text";  // untranslated
 Blockly.Msg["TEXT_INDEXOF_OPERATOR_FIRST"] = "rask,kur pirmą kartą paminėta";
 Blockly.Msg["TEXT_INDEXOF_OPERATOR_LAST"] = "rask,kur paskutinį kartą paminėta";
-Blockly.Msg["TEXT_INDEXOF_TITLE"] = "tekste %1 %2 %3";
+Blockly.Msg["TEXT_INDEXOF_TITLE"] = "in text %1 %2 %3";  // untranslated
 Blockly.Msg["TEXT_INDEXOF_TOOLTIP"] = "Grąžina pirmą/paskutinę pirmo teksto reikšmę antrame tekste. Grąžina %1, jei tekstas nerastas.";
 Blockly.Msg["TEXT_ISEMPTY_HELPURL"] = "https://github.com/google/blockly/wiki/Text#checking-for-empty-text";  // untranslated
 Blockly.Msg["TEXT_ISEMPTY_TITLE"] = "%1 yra tuščias";
@@ -393,7 +402,7 @@ Blockly.Msg["TEXT_TRIM_OPERATOR_RIGHT"] = "išvalyk tarpus pabaigoje";
 Blockly.Msg["TEXT_TRIM_TOOLTIP"] = "Grąžina teksto kopiją, pašalinus tarpus iš vieno ar abiejų kraštų.";
 Blockly.Msg["TODAY"] = "Šiandien";
 Blockly.Msg["UNDO"] = "Anuliuoti";
-Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "elementas";
+Blockly.Msg["UNNAMED_KEY"] = "unnamed";  // untranslated
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Sukurk \"priskirk %1\"";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Returns the value of this variable.";  // untranslated
@@ -403,6 +412,7 @@ Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/V
 Blockly.Msg["VARIABLES_SET_TOOLTIP"] = "Sets this variable to be equal to the input.";  // untranslated
 Blockly.Msg["VARIABLE_ALREADY_EXISTS"] = "Kintamasis, pavadinimu '%1', jau egzistuoja.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE"] = "Kintamasis, pavadinimu '%1', jau egzistuoja kaip kitas tipas: '%2'.";
+Blockly.Msg["WORKSPACE_ARIA_LABEL"] = "Blockly Workspace";  // untranslated
 Blockly.Msg["WORKSPACE_COMMENT_DEFAULT_TEXT"] = "Kažką pasakykite...";
 Blockly.Msg["CONTROLS_FOREACH_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
 Blockly.Msg["CONTROLS_FOR_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
@@ -430,7 +440,8 @@ Blockly.Msg["LOOPS_HUE"] = "120";
 Blockly.Msg["LISTS_HUE"] = "260";
 Blockly.Msg["LOGIC_HUE"] = "210";
 Blockly.Msg["VARIABLES_HUE"] = "330";
+Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
 Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
-Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "item";

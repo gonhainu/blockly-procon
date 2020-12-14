@@ -2,10 +2,6 @@
 
 'use strict';
 
-goog.provide('Blockly.Msg.pl');
-
-goog.require('Blockly.Msg');
-
 Blockly.Msg["ADD_COMMENT"] = "Dodaj Komentarz";
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Nie można usunąć zmiennej '%1', ponieważ jest częścią definicji funkcji '%2'";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Zmień wartość:";
@@ -74,6 +70,19 @@ Blockly.Msg["ENABLE_BLOCK"] = "Włącz Blok";
 Blockly.Msg["EXPAND_ALL"] = "Rozwiń Bloki";
 Blockly.Msg["EXPAND_BLOCK"] = "Rozwiń Klocek";
 Blockly.Msg["EXTERNAL_INPUTS"] = "Zewnętrzne Wejścia";
+Blockly.Msg["FUNCTIONS_CALL_TITLE"] = "call";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_BOOLEAN_ARG_NAME"] = "bool";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_CUSTOM_ARG_NAME"] = "arg";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_FUNCTION_NAME"] = "do_something";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_NUMBER_ARG_NAME"] = "num";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_STRING_ARG_NAME"] = "text";  // untranslated
+Blockly.Msg["FUNCTIONS_EDIT_OPTION"] = "Edit";  // untranslated
+Blockly.Msg["FUNCTIONS_GO_TO_DEFINITION_OPTION"] = "Go to definition";  // untranslated
+Blockly.Msg["FUNCTION_CALL_TOOLTIP"] = "Call a function that was previously defined.";  // untranslated
+Blockly.Msg["FUNCTION_CREATE_NEW"] = "Create a Function";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_ARG_NAME_IS_FUNCTION_NAME"] = "Argument names must not be the same as the function name.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_DUPLICATE_ARG"] = "Functions cannot use the same argument name more than once.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_EMPTY_NAME"] = "Function and argument names cannot be empty.";  // untranslated
 Blockly.Msg["HELP"] = "Pomoc";
 Blockly.Msg["INLINE_INPUTS"] = "Wbudowane Wejścia";
 Blockly.Msg["IOS_CANCEL"] = "Anuluj";
@@ -106,7 +115,7 @@ Blockly.Msg["LISTS_GET_INDEX_GET_REMOVE"] = "zabierz";
 Blockly.Msg["LISTS_GET_INDEX_LAST"] = "ostatni";
 Blockly.Msg["LISTS_GET_INDEX_RANDOM"] = "losowy";
 Blockly.Msg["LISTS_GET_INDEX_REMOVE"] = "usuń";
-Blockly.Msg["LISTS_GET_INDEX_TAIL"] = "";  // untranslated
+Blockly.Msg["LISTS_GET_INDEX_TAIL"] = "";
 Blockly.Msg["LISTS_GET_INDEX_TOOLTIP_GET_FIRST"] = "Zwraca pierwszy element z listy.";
 Blockly.Msg["LISTS_GET_INDEX_TOOLTIP_GET_FROM"] = "Zwraca element z konkretnej pozycji na liście.";
 Blockly.Msg["LISTS_GET_INDEX_TOOLTIP_GET_LAST"] = "Zwraca ostatni element z listy.";
@@ -393,7 +402,7 @@ Blockly.Msg["TEXT_TRIM_OPERATOR_RIGHT"] = "usuń spacje z prawej strony";
 Blockly.Msg["TEXT_TRIM_TOOLTIP"] = "Zwraca kopię tekstu z usuniętymi spacjami z jednego lub z obu końców tekstu.";
 Blockly.Msg["TODAY"] = "Dzisiaj";
 Blockly.Msg["UNDO"] = "Cofnij";
-Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "element";
+Blockly.Msg["UNNAMED_KEY"] = "bez nazwy";
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Utwórz klocek 'ustaw %1'";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Zwraca wartość tej zmiennej.";
@@ -403,6 +412,7 @@ Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/V
 Blockly.Msg["VARIABLES_SET_TOOLTIP"] = "Wartości zmiennej i  wejście będą identyczne.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS"] = "Zmienna o nazwie '%1' już istnieje.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE"] = "Zmienna o nazwie '%1' już istnieje i jest typu '%2'.";
+Blockly.Msg["WORKSPACE_ARIA_LABEL"] = "Blockly Workspace";  // untranslated
 Blockly.Msg["WORKSPACE_COMMENT_DEFAULT_TEXT"] = "Powiedz coś...";
 Blockly.Msg["CONTROLS_FOREACH_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
 Blockly.Msg["CONTROLS_FOR_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
@@ -430,7 +440,8 @@ Blockly.Msg["LOOPS_HUE"] = "120";
 Blockly.Msg["LISTS_HUE"] = "260";
 Blockly.Msg["LOGIC_HUE"] = "210";
 Blockly.Msg["VARIABLES_HUE"] = "330";
+Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
 Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
-Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "item";

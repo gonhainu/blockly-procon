@@ -2,10 +2,6 @@
 
 'use strict';
 
-goog.provide('Blockly.Msg.diq');
-
-goog.require('Blockly.Msg');
-
 Blockly.Msg["ADD_COMMENT"] = "Tefsir cı ke";
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Can't delete the variable '%1' because it's part of the definition of the function '%2'";  // untranslated
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Erci bıvurne:";
@@ -74,6 +70,19 @@ Blockly.Msg["ENABLE_BLOCK"] = "Bloki feal ke";
 Blockly.Msg["EXPAND_ALL"] = "Blokan hera ke";
 Blockly.Msg["EXPAND_BLOCK"] = "Bloki hera ke";
 Blockly.Msg["EXTERNAL_INPUTS"] = "Cıkewtışê xarıciy";
+Blockly.Msg["FUNCTIONS_CALL_TITLE"] = "call";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_BOOLEAN_ARG_NAME"] = "bool";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_CUSTOM_ARG_NAME"] = "arg";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_FUNCTION_NAME"] = "do_something";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_NUMBER_ARG_NAME"] = "num";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_STRING_ARG_NAME"] = "text";  // untranslated
+Blockly.Msg["FUNCTIONS_EDIT_OPTION"] = "Edit";  // untranslated
+Blockly.Msg["FUNCTIONS_GO_TO_DEFINITION_OPTION"] = "Go to definition";  // untranslated
+Blockly.Msg["FUNCTION_CALL_TOOLTIP"] = "Call a function that was previously defined.";  // untranslated
+Blockly.Msg["FUNCTION_CREATE_NEW"] = "Create a Function";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_ARG_NAME_IS_FUNCTION_NAME"] = "Argument names must not be the same as the function name.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_DUPLICATE_ARG"] = "Functions cannot use the same argument name more than once.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_EMPTY_NAME"] = "Function and argument names cannot be empty.";  // untranslated
 Blockly.Msg["HELP"] = "Peşti";
 Blockly.Msg["INLINE_INPUTS"] = "Cıkerdışê xomiyani";
 Blockly.Msg["IOS_CANCEL"] = "Bıtexelne";
@@ -145,8 +154,8 @@ Blockly.Msg["LISTS_REPEAT_HELPURL"] = "https://github.com/google/blockly/wiki/Li
 Blockly.Msg["LISTS_REPEAT_TITLE"] = "create list with item %1 repeated %2 times";  // untranslated
 Blockly.Msg["LISTS_REPEAT_TOOLTIP"] = "Creates a list consisting of the given value repeated the specified number of times.";  // untranslated
 Blockly.Msg["LISTS_REVERSE_HELPURL"] = "https://github.com/google/blockly/wiki/Lists#reversing-a-list";  // untranslated
-Blockly.Msg["LISTS_REVERSE_MESSAGE0"] = "reverse %1";  // untranslated
-Blockly.Msg["LISTS_REVERSE_TOOLTIP"] = "Reverse a copy of a list.";  // untranslated
+Blockly.Msg["LISTS_REVERSE_MESSAGE0"] = "%1 dimlaşt kerê";
+Blockly.Msg["LISTS_REVERSE_TOOLTIP"] = "Yew kopyaya yew lista dimlaşt kerê.";
 Blockly.Msg["LISTS_SET_INDEX_HELPURL"] = "https://github.com/google/blockly/wiki/Lists#in-list--set";  // untranslated
 Blockly.Msg["LISTS_SET_INDEX_INPUT_TO"] = "zey";
 Blockly.Msg["LISTS_SET_INDEX_INSERT"] = "De fi";
@@ -310,7 +319,7 @@ Blockly.Msg["PROCEDURES_DEFNORETURN_TOOLTIP"] = "Yew fonksiyono çap nêdate vı
 Blockly.Msg["PROCEDURES_DEFRETURN_HELPURL"] = "https://en.wikipedia.org/wiki/Subroutine";  // untranslated
 Blockly.Msg["PROCEDURES_DEFRETURN_RETURN"] = "peyser biya";
 Blockly.Msg["PROCEDURES_DEFRETURN_TOOLTIP"] = "Yew fonksiyono çap daye vırazeno";
-Blockly.Msg["PROCEDURES_DEF_DUPLICATE_WARNING"] = "Warning: This function has duplicate parameters.";  // untranslated
+Blockly.Msg["PROCEDURES_DEF_DUPLICATE_WARNING"] = "Tembe: Nê fonksiyoni de parametreyê dıleti estê.";
 Blockly.Msg["PROCEDURES_HIGHLIGHT_DEF"] = "Highlight function definition";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_HELPURL"] = "http://c2.com/cgi/wiki?GuardClause";  // untranslated
 Blockly.Msg["PROCEDURES_IFRETURN_TOOLTIP"] = "If a value is true, then return a second value.";  // untranslated
@@ -393,16 +402,17 @@ Blockly.Msg["TEXT_TRIM_OPERATOR_RIGHT"] = "trim spaces from right side of";  // 
 Blockly.Msg["TEXT_TRIM_TOOLTIP"] = "Return a copy of the text with spaces removed from one or both ends.";  // untranslated
 Blockly.Msg["TODAY"] = "Ewro";
 Blockly.Msg["UNDO"] = "Peyser bıgê";
-Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "unsur";
+Blockly.Msg["UNNAMED_KEY"] = "bêname";
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "'%1 bınuse' vıraze";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Returns the value of this variable.";  // untranslated
-Blockly.Msg["VARIABLES_SET"] = "set %1 to %2";  // untranslated
+Blockly.Msg["VARIABLES_SET"] = "%1 ra %2 rê eyar kerê";
 Blockly.Msg["VARIABLES_SET_CREATE_GET"] = "'%1 bıwane' vıraze";
 Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#set";  // untranslated
 Blockly.Msg["VARIABLES_SET_TOOLTIP"] = "Sets this variable to be equal to the input.";  // untranslated
 Blockly.Msg["VARIABLE_ALREADY_EXISTS"] = "Yew vırnayış be namey '%1' xora est.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE"] = "A variable named '%1' already exists for another type: '%2'.";  // untranslated
+Blockly.Msg["WORKSPACE_ARIA_LABEL"] = "Blockly Workspace";  // untranslated
 Blockly.Msg["WORKSPACE_COMMENT_DEFAULT_TEXT"] = "Çiyê vace...";
 Blockly.Msg["CONTROLS_FOREACH_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
 Blockly.Msg["CONTROLS_FOR_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
@@ -430,7 +440,8 @@ Blockly.Msg["LOOPS_HUE"] = "120";
 Blockly.Msg["LISTS_HUE"] = "260";
 Blockly.Msg["LOGIC_HUE"] = "210";
 Blockly.Msg["VARIABLES_HUE"] = "330";
+Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
 Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
-Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "item";

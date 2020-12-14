@@ -2,10 +2,6 @@
 
 'use strict';
 
-goog.provide('Blockly.Msg.id');
-
-goog.require('Blockly.Msg');
-
 Blockly.Msg["ADD_COMMENT"] = "Tambahkan Komentar";
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Can't delete the variable '%1' because it's part of the definition of the function '%2'";  // untranslated
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Ubah nilai:";
@@ -74,6 +70,19 @@ Blockly.Msg["ENABLE_BLOCK"] = "Aktifkan Blok";
 Blockly.Msg["EXPAND_ALL"] = "Kembangkan Blok";
 Blockly.Msg["EXPAND_BLOCK"] = "Kembangkan Blok";
 Blockly.Msg["EXTERNAL_INPUTS"] = "Input Eksternal";
+Blockly.Msg["FUNCTIONS_CALL_TITLE"] = "call";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_BOOLEAN_ARG_NAME"] = "bool";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_CUSTOM_ARG_NAME"] = "arg";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_FUNCTION_NAME"] = "do_something";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_NUMBER_ARG_NAME"] = "num";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_STRING_ARG_NAME"] = "text";  // untranslated
+Blockly.Msg["FUNCTIONS_EDIT_OPTION"] = "Edit";  // untranslated
+Blockly.Msg["FUNCTIONS_GO_TO_DEFINITION_OPTION"] = "Go to definition";  // untranslated
+Blockly.Msg["FUNCTION_CALL_TOOLTIP"] = "Call a function that was previously defined.";  // untranslated
+Blockly.Msg["FUNCTION_CREATE_NEW"] = "Create a Function";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_ARG_NAME_IS_FUNCTION_NAME"] = "Argument names must not be the same as the function name.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_DUPLICATE_ARG"] = "Functions cannot use the same argument name more than once.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_EMPTY_NAME"] = "Function and argument names cannot be empty.";  // untranslated
 Blockly.Msg["HELP"] = "Bantuan";
 Blockly.Msg["INLINE_INPUTS"] = "Input Inline";
 Blockly.Msg["IOS_CANCEL"] = "Cancel";  // untranslated
@@ -324,7 +333,7 @@ Blockly.Msg["REMOVE_COMMENT"] = "Hapus Komentar";
 Blockly.Msg["RENAME_VARIABLE"] = "Ubah nama variabel...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Ubah nama semua variabel '%1' menjadi:";
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
-Blockly.Msg["TEXT_APPEND_TITLE"] = "untuk %1 tambahkan teks %2";
+Blockly.Msg["TEXT_APPEND_TITLE"] = "to %1 append text %2";  // untranslated
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Tambahkan beberapa teks ke variabel '%1'.";
 Blockly.Msg["TEXT_CHANGECASE_HELPURL"] = "https://github.com/google/blockly/wiki/Text#adjusting-text-case";  // untranslated
 Blockly.Msg["TEXT_CHANGECASE_OPERATOR_LOWERCASE"] = "menjadi huruf kecil";
@@ -359,7 +368,7 @@ Blockly.Msg["TEXT_GET_SUBSTRING_TOOLTIP"] = "Kembalikan spesifik bagian dari tek
 Blockly.Msg["TEXT_INDEXOF_HELPURL"] = "https://github.com/google/blockly/wiki/Text#finding-text";  // untranslated
 Blockly.Msg["TEXT_INDEXOF_OPERATOR_FIRST"] = "temukan kejadian pertama dalam teks";
 Blockly.Msg["TEXT_INDEXOF_OPERATOR_LAST"] = "temukan kejadian terakhir dalam teks";
-Blockly.Msg["TEXT_INDEXOF_TITLE"] = "dalam teks %1 %2 %3";
+Blockly.Msg["TEXT_INDEXOF_TITLE"] = "in text %1 %2 %3";  // untranslated
 Blockly.Msg["TEXT_INDEXOF_TOOLTIP"] = "Kembalikan indeks pertama dan terakhir dari kejadian pertama/terakhir dari teks pertama dalam teks kedua.  Kembalikan %1 jika teks tidak ditemukan.";
 Blockly.Msg["TEXT_ISEMPTY_HELPURL"] = "https://github.com/google/blockly/wiki/Text#checking-for-empty-text";  // untranslated
 Blockly.Msg["TEXT_ISEMPTY_TITLE"] = "%1 kosong";
@@ -393,7 +402,7 @@ Blockly.Msg["TEXT_TRIM_OPERATOR_RIGHT"] = "pangkas ruang dari sisi kanan";
 Blockly.Msg["TEXT_TRIM_TOOLTIP"] = "Kembali salinan teks dengan spasi dihapus dari satu atau kedua ujungnya.";
 Blockly.Msg["TODAY"] = "Hari ini";
 Blockly.Msg["UNDO"] = "Urungkan";
-Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "item";
+Blockly.Msg["UNNAMED_KEY"] = "unnamed";  // untranslated
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Buat 'set %1'";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Kembalikan nilai variabel ini.";
@@ -403,6 +412,7 @@ Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/V
 Blockly.Msg["VARIABLES_SET_TOOLTIP"] = "tetapkan variabel ini dengan input yang sama.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS"] = "Sebuah variabel dengan nama '%1' sudah ada.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE"] = "A variable named '%1' already exists for another type: '%2'.";  // untranslated
+Blockly.Msg["WORKSPACE_ARIA_LABEL"] = "Blockly Workspace";  // untranslated
 Blockly.Msg["WORKSPACE_COMMENT_DEFAULT_TEXT"] = "Say something...";  // untranslated
 Blockly.Msg["CONTROLS_FOREACH_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
 Blockly.Msg["CONTROLS_FOR_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
@@ -430,7 +440,8 @@ Blockly.Msg["LOOPS_HUE"] = "120";
 Blockly.Msg["LISTS_HUE"] = "260";
 Blockly.Msg["LOGIC_HUE"] = "210";
 Blockly.Msg["VARIABLES_HUE"] = "330";
+Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
 Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
-Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "item";

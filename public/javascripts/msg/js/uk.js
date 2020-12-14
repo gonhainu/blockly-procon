@@ -2,14 +2,10 @@
 
 'use strict';
 
-goog.provide('Blockly.Msg.uk');
-
-goog.require('Blockly.Msg');
-
 Blockly.Msg["ADD_COMMENT"] = "Додати коментар";
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Неможливо видалити змінну '%1', тому що це частина визначення функції '%2'";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Змінити значення:";
-Blockly.Msg["CLEAN_UP"] = "Вирівняти блоки";
+Blockly.Msg["CLEAN_UP"] = "Очистити блоки";
 Blockly.Msg["COLLAPSED_WARNINGS_WARNING"] = "Звернуті блоки містять попередження.";
 Blockly.Msg["COLLAPSE_ALL"] = "Згорнути блоки";
 Blockly.Msg["COLLAPSE_BLOCK"] = "Згорнути блок";
@@ -74,11 +70,24 @@ Blockly.Msg["ENABLE_BLOCK"] = "Увімкнути блок";
 Blockly.Msg["EXPAND_ALL"] = "Розгорнути блоки";
 Blockly.Msg["EXPAND_BLOCK"] = "Розгорнути блок";
 Blockly.Msg["EXTERNAL_INPUTS"] = "Зовнішні входи";
+Blockly.Msg["FUNCTIONS_CALL_TITLE"] = "call";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_BOOLEAN_ARG_NAME"] = "bool";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_CUSTOM_ARG_NAME"] = "arg";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_FUNCTION_NAME"] = "do_something";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_NUMBER_ARG_NAME"] = "num";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_STRING_ARG_NAME"] = "text";  // untranslated
+Blockly.Msg["FUNCTIONS_EDIT_OPTION"] = "Edit";  // untranslated
+Blockly.Msg["FUNCTIONS_GO_TO_DEFINITION_OPTION"] = "Go to definition";  // untranslated
+Blockly.Msg["FUNCTION_CALL_TOOLTIP"] = "Call a function that was previously defined.";  // untranslated
+Blockly.Msg["FUNCTION_CREATE_NEW"] = "Create a Function";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_ARG_NAME_IS_FUNCTION_NAME"] = "Argument names must not be the same as the function name.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_DUPLICATE_ARG"] = "Functions cannot use the same argument name more than once.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_EMPTY_NAME"] = "Function and argument names cannot be empty.";  // untranslated
 Blockly.Msg["HELP"] = "Довідка";
 Blockly.Msg["INLINE_INPUTS"] = "Вбудовані входи";
 Blockly.Msg["IOS_CANCEL"] = "Скасувати";
 Blockly.Msg["IOS_ERROR"] = "Помилка";
-Blockly.Msg["IOS_OK"] = "Готово";
+Blockly.Msg["IOS_OK"] = "OK";  // untranslated
 Blockly.Msg["IOS_PROCEDURES_ADD_INPUT"] = "+ Додати вхідну змінну";
 Blockly.Msg["IOS_PROCEDURES_ALLOW_STATEMENTS"] = "Дозволити оператори";
 Blockly.Msg["IOS_PROCEDURES_DUPLICATE_INPUTS_ERROR"] = "У цієї функції є вхідні змінні, що дублюються.";
@@ -324,7 +333,7 @@ Blockly.Msg["REMOVE_COMMENT"] = "Видалити коментар";
 Blockly.Msg["RENAME_VARIABLE"] = "Перейменувати змінну...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Перейменувати усі змінні \"%1\" до:";
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
-Blockly.Msg["TEXT_APPEND_TITLE"] = "до %1 додати текст %2";
+Blockly.Msg["TEXT_APPEND_TITLE"] = "to %1 append text %2";  // untranslated
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Додати деякий текст до змінної '%1'.";
 Blockly.Msg["TEXT_CHANGECASE_HELPURL"] = "https://github.com/google/blockly/wiki/Text#adjusting-text-case";  // untranslated
 Blockly.Msg["TEXT_CHANGECASE_OPERATOR_LOWERCASE"] = "до нижнього регістру";
@@ -359,7 +368,7 @@ Blockly.Msg["TEXT_GET_SUBSTRING_TOOLTIP"] = "Повертає заданий ф�
 Blockly.Msg["TEXT_INDEXOF_HELPURL"] = "https://github.com/google/blockly/wiki/Text#finding-text";  // untranslated
 Blockly.Msg["TEXT_INDEXOF_OPERATOR_FIRST"] = "знайти перше входження тексту";
 Blockly.Msg["TEXT_INDEXOF_OPERATOR_LAST"] = "знайти останнє входження тексту";
-Blockly.Msg["TEXT_INDEXOF_TITLE"] = "у тексті %1 %2 %3.";
+Blockly.Msg["TEXT_INDEXOF_TITLE"] = "in text %1 %2 %3";  // untranslated
 Blockly.Msg["TEXT_INDEXOF_TOOLTIP"] = "Повертає індекс першого/останнього входження першого тексту в другий. Повертає %1, якщо текст не знайдено.";
 Blockly.Msg["TEXT_ISEMPTY_HELPURL"] = "https://github.com/google/blockly/wiki/Text#checking-for-empty-text";  // untranslated
 Blockly.Msg["TEXT_ISEMPTY_TITLE"] = "%1 є порожнім";
@@ -393,7 +402,7 @@ Blockly.Msg["TEXT_TRIM_OPERATOR_RIGHT"] = "вилучити пропуски з 
 Blockly.Msg["TEXT_TRIM_TOOLTIP"] = "Повертає копію тексту з вилученими пропусками з одного або обох кінців.";
 Blockly.Msg["TODAY"] = "Сьогодні";
 Blockly.Msg["UNDO"] = "Скасувати";
-Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "елемент";
+Blockly.Msg["UNNAMED_KEY"] = "без назви";
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Створити 'встановити %1'";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Повертає значення цієї змінної.";
@@ -403,6 +412,7 @@ Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/V
 Blockly.Msg["VARIABLES_SET_TOOLTIP"] = "Задає цю змінну рівною входу.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS"] = "Змінна з назвою '%1' вже існує.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE"] = "Змінна з назвою '%1' вже існує в іншому типі: '%2'.";
+Blockly.Msg["WORKSPACE_ARIA_LABEL"] = "Робоча область Blockly";
 Blockly.Msg["WORKSPACE_COMMENT_DEFAULT_TEXT"] = "Скажіть щось...";
 Blockly.Msg["CONTROLS_FOREACH_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
 Blockly.Msg["CONTROLS_FOR_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
@@ -430,7 +440,8 @@ Blockly.Msg["LOOPS_HUE"] = "120";
 Blockly.Msg["LISTS_HUE"] = "260";
 Blockly.Msg["LOGIC_HUE"] = "210";
 Blockly.Msg["VARIABLES_HUE"] = "330";
+Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
 Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
-Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "item";

@@ -2,10 +2,6 @@
 
 'use strict';
 
-goog.provide('Blockly.Msg.ro');
-
-goog.require('Blockly.Msg');
-
 Blockly.Msg["ADD_COMMENT"] = "Adaugă un comentariu";
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Nu se poate șterge variabila '%1' deoarece face parte din definiția funcției '%2'";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Schimbaţi valoarea:";
@@ -74,6 +70,19 @@ Blockly.Msg["ENABLE_BLOCK"] = "Permite bloc";
 Blockly.Msg["EXPAND_ALL"] = "Extinde blocuri";
 Blockly.Msg["EXPAND_BLOCK"] = "Extinde bloc";
 Blockly.Msg["EXTERNAL_INPUTS"] = "Intrări externe";
+Blockly.Msg["FUNCTIONS_CALL_TITLE"] = "call";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_BOOLEAN_ARG_NAME"] = "bool";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_CUSTOM_ARG_NAME"] = "arg";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_FUNCTION_NAME"] = "do_something";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_NUMBER_ARG_NAME"] = "num";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_STRING_ARG_NAME"] = "text";  // untranslated
+Blockly.Msg["FUNCTIONS_EDIT_OPTION"] = "Edit";  // untranslated
+Blockly.Msg["FUNCTIONS_GO_TO_DEFINITION_OPTION"] = "Go to definition";  // untranslated
+Blockly.Msg["FUNCTION_CALL_TOOLTIP"] = "Call a function that was previously defined.";  // untranslated
+Blockly.Msg["FUNCTION_CREATE_NEW"] = "Create a Function";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_ARG_NAME_IS_FUNCTION_NAME"] = "Argument names must not be the same as the function name.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_DUPLICATE_ARG"] = "Functions cannot use the same argument name more than once.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_EMPTY_NAME"] = "Function and argument names cannot be empty.";  // untranslated
 Blockly.Msg["HELP"] = "Ajutor";
 Blockly.Msg["INLINE_INPUTS"] = "Intrări în linie";
 Blockly.Msg["IOS_CANCEL"] = "Anulare";
@@ -277,7 +286,7 @@ Blockly.Msg["MATH_TRIG_ACOS"] = "arccos";
 Blockly.Msg["MATH_TRIG_ASIN"] = "arcsin";
 Blockly.Msg["MATH_TRIG_ATAN"] = "arctg";
 Blockly.Msg["MATH_TRIG_COS"] = "cos";
-Blockly.Msg["MATH_TRIG_HELPURL"] = "https://ro.wikipedia.org/wiki/Funcții_trigonometrice";
+Blockly.Msg["MATH_TRIG_HELPURL"] = "https://ko.wikipedia.org/wiki/삼각함수";
 Blockly.Msg["MATH_TRIG_SIN"] = "sin";
 Blockly.Msg["MATH_TRIG_TAN"] = "tg";
 Blockly.Msg["MATH_TRIG_TOOLTIP_ACOS"] = "Returnează arccosinusul unui număr.";
@@ -324,7 +333,7 @@ Blockly.Msg["REMOVE_COMMENT"] = "Elimină comentariu";
 Blockly.Msg["RENAME_VARIABLE"] = "Redenumirea variabilei...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Redenumeşte toate variabilele '%1' în:";
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
-Blockly.Msg["TEXT_APPEND_TITLE"] = "la %1 Adăugaţi text %2";
+Blockly.Msg["TEXT_APPEND_TITLE"] = "to %1 append text %2";  // untranslated
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Adăugaţi text la variabila '%1'.";
 Blockly.Msg["TEXT_CHANGECASE_HELPURL"] = "https://github.com/google/blockly/wiki/Text#adjusting-text-case";  // untranslated
 Blockly.Msg["TEXT_CHANGECASE_OPERATOR_LOWERCASE"] = "la litere mici";
@@ -359,7 +368,7 @@ Blockly.Msg["TEXT_GET_SUBSTRING_TOOLTIP"] = "Returnează o anumită parte din te
 Blockly.Msg["TEXT_INDEXOF_HELPURL"] = "https://github.com/google/blockly/wiki/Text#finding-text";  // untranslated
 Blockly.Msg["TEXT_INDEXOF_OPERATOR_FIRST"] = "găseşte prima apariţie a textului";
 Blockly.Msg["TEXT_INDEXOF_OPERATOR_LAST"] = "găseşte ultima apariţie a textului";
-Blockly.Msg["TEXT_INDEXOF_TITLE"] = "în text %1 %2 %3";
+Blockly.Msg["TEXT_INDEXOF_TITLE"] = "in text %1 %2 %3";  // untranslated
 Blockly.Msg["TEXT_INDEXOF_TOOLTIP"] = "Returnează indicele primei/ultimei apariţii din primul text în al doilea text.  Returnează %1 dacă textul nu este găsit.";
 Blockly.Msg["TEXT_ISEMPTY_HELPURL"] = "https://github.com/google/blockly/wiki/Text#checking-for-empty-text";  // untranslated
 Blockly.Msg["TEXT_ISEMPTY_TITLE"] = "%1 este gol";
@@ -393,7 +402,7 @@ Blockly.Msg["TEXT_TRIM_OPERATOR_RIGHT"] = "taie spațiile din partea dreaptă a"
 Blockly.Msg["TEXT_TRIM_TOOLTIP"] = "Returnează o copie a textului fără spațiile de la unul sau ambele capete.";
 Blockly.Msg["TODAY"] = "Astăzi";
 Blockly.Msg["UNDO"] = "Anulează";
-Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "element";
+Blockly.Msg["UNNAMED_KEY"] = "unnamed";  // untranslated
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Crează 'set %1'";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Returnează valoarea acestei variabile.";
@@ -403,6 +412,7 @@ Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/V
 Blockly.Msg["VARIABLES_SET_TOOLTIP"] = "Setează această variabilă sa fie egală la intrare.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS"] = "O variabilă cu numele '%1'  există deja.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE"] = "o variabilă numită '%1' există deja pentru alt tip: '%2'.";
+Blockly.Msg["WORKSPACE_ARIA_LABEL"] = "Blockly Workspace";  // untranslated
 Blockly.Msg["WORKSPACE_COMMENT_DEFAULT_TEXT"] = "Spune ceva...";
 Blockly.Msg["CONTROLS_FOREACH_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
 Blockly.Msg["CONTROLS_FOR_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
@@ -430,7 +440,8 @@ Blockly.Msg["LOOPS_HUE"] = "120";
 Blockly.Msg["LISTS_HUE"] = "260";
 Blockly.Msg["LOGIC_HUE"] = "210";
 Blockly.Msg["VARIABLES_HUE"] = "330";
+Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
 Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
-Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "item";

@@ -2,10 +2,6 @@
 
 'use strict';
 
-goog.provide('Blockly.Msg.vi');
-
-goog.require('Blockly.Msg');
-
 Blockly.Msg["ADD_COMMENT"] = "Thêm Chú Giải";
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Không thể xóa giá trị '%1' vì nó được bao gồm trong định nghĩa của chức năng '%2'";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Thay giá trị thành:";
@@ -74,6 +70,19 @@ Blockly.Msg["ENABLE_BLOCK"] = "Phục Hồi Tác Dụng";
 Blockly.Msg["EXPAND_ALL"] = "Mở Lớn Mọi Mảnh";
 Blockly.Msg["EXPAND_BLOCK"] = "Mở Lớn Mảnh";
 Blockly.Msg["EXTERNAL_INPUTS"] = "Chỗ Gắn Bên Ngoài";
+Blockly.Msg["FUNCTIONS_CALL_TITLE"] = "call";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_BOOLEAN_ARG_NAME"] = "bool";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_CUSTOM_ARG_NAME"] = "arg";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_FUNCTION_NAME"] = "do_something";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_NUMBER_ARG_NAME"] = "num";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_STRING_ARG_NAME"] = "text";  // untranslated
+Blockly.Msg["FUNCTIONS_EDIT_OPTION"] = "Edit";  // untranslated
+Blockly.Msg["FUNCTIONS_GO_TO_DEFINITION_OPTION"] = "Go to definition";  // untranslated
+Blockly.Msg["FUNCTION_CALL_TOOLTIP"] = "Call a function that was previously defined.";  // untranslated
+Blockly.Msg["FUNCTION_CREATE_NEW"] = "Create a Function";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_ARG_NAME_IS_FUNCTION_NAME"] = "Argument names must not be the same as the function name.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_DUPLICATE_ARG"] = "Functions cannot use the same argument name more than once.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_EMPTY_NAME"] = "Function and argument names cannot be empty.";  // untranslated
 Blockly.Msg["HELP"] = "Trợ Giúp";
 Blockly.Msg["INLINE_INPUTS"] = "Chỗ Gắn Cùng Dòng";
 Blockly.Msg["IOS_CANCEL"] = "Hủy bỏ";
@@ -324,7 +333,7 @@ Blockly.Msg["REMOVE_COMMENT"] = "Xóa Chú Giải";
 Blockly.Msg["RENAME_VARIABLE"] = "Thay tên biến...";
 Blockly.Msg["RENAME_VARIABLE_TITLE"] = "Thay tên tất cả các biến \"%1\" thành:";
 Blockly.Msg["TEXT_APPEND_HELPURL"] = "https://github.com/google/blockly/wiki/Text#text-modification";  // untranslated
-Blockly.Msg["TEXT_APPEND_TITLE"] = "ở cuối %1 thêm văn bản %2";
+Blockly.Msg["TEXT_APPEND_TITLE"] = "to %1 append text %2";  // untranslated
 Blockly.Msg["TEXT_APPEND_TOOLTIP"] = "Thêm một mảng văn bản vào biến \"%1\".";
 Blockly.Msg["TEXT_CHANGECASE_HELPURL"] = "https://github.com/google/blockly/wiki/Text#adjusting-text-case";  // untranslated
 Blockly.Msg["TEXT_CHANGECASE_OPERATOR_LOWERCASE"] = "thành chữ thường";
@@ -337,7 +346,7 @@ Blockly.Msg["TEXT_CHARAT_FROM_START"] = "lấy ký tự thứ";
 Blockly.Msg["TEXT_CHARAT_HELPURL"] = "https://github.com/google/blockly/wiki/Text#extracting-text";  // untranslated
 Blockly.Msg["TEXT_CHARAT_LAST"] = "lấy ký tự cuối cùng";
 Blockly.Msg["TEXT_CHARAT_RANDOM"] = "lấy ký tự bất kỳ";
-Blockly.Msg["TEXT_CHARAT_TAIL"] = "";  // untranslated
+Blockly.Msg["TEXT_CHARAT_TAIL"] = "";
 Blockly.Msg["TEXT_CHARAT_TITLE"] = "trong văn bản %1 %2";
 Blockly.Msg["TEXT_CHARAT_TOOLTIP"] = "Hoàn trả ký tự ở vị trí đặt ra.";
 Blockly.Msg["TEXT_COUNT_HELPURL"] = "https://github.com/google/blockly/wiki/Text#counting-substrings";  // untranslated
@@ -354,7 +363,7 @@ Blockly.Msg["TEXT_GET_SUBSTRING_INPUT_IN_TEXT"] = "trong văn bản";
 Blockly.Msg["TEXT_GET_SUBSTRING_START_FIRST"] = "lấy từ ký tự đầu tiên";
 Blockly.Msg["TEXT_GET_SUBSTRING_START_FROM_END"] = "lấy từ phía cuối, ký tự thứ";
 Blockly.Msg["TEXT_GET_SUBSTRING_START_FROM_START"] = "lấy từ ký tự thứ";
-Blockly.Msg["TEXT_GET_SUBSTRING_TAIL"] = "";  // untranslated
+Blockly.Msg["TEXT_GET_SUBSTRING_TAIL"] = "";
 Blockly.Msg["TEXT_GET_SUBSTRING_TOOLTIP"] = "Hoàn trả một mảng ký tự ấn định từ trong văn bản.";
 Blockly.Msg["TEXT_INDEXOF_HELPURL"] = "https://github.com/google/blockly/wiki/Text#finding-text";  // untranslated
 Blockly.Msg["TEXT_INDEXOF_OPERATOR_FIRST"] = "tìm sự có mặt đầu tiên của";
@@ -393,7 +402,7 @@ Blockly.Msg["TEXT_TRIM_OPERATOR_RIGHT"] = "cắt các không gian từ bên ph�
 Blockly.Msg["TEXT_TRIM_TOOLTIP"] = "Hoàn trả bản sao của văn bản sau khi xóa khoảng trắng từ một hoặc hai bên.";
 Blockly.Msg["TODAY"] = "Hôm nay";
 Blockly.Msg["UNDO"] = "Hoàn tác";
-Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "vật";
+Blockly.Msg["UNNAMED_KEY"] = "unnamed";  // untranslated
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Tạo mảnh \"đặt vào %1\"";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Hoàn trả giá trị của.";
@@ -403,6 +412,7 @@ Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/V
 Blockly.Msg["VARIABLES_SET_TOOLTIP"] = "Đặt giá trị của biến này thành...";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS"] = "Một biến có tên '%1' đã tồn tại.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE"] = "Giá trị '%1' đã tồn tại dưới dạng: '%2'.";
+Blockly.Msg["WORKSPACE_ARIA_LABEL"] = "Blockly Workspace";  // untranslated
 Blockly.Msg["WORKSPACE_COMMENT_DEFAULT_TEXT"] = "Hãy nói gì đó...";
 Blockly.Msg["CONTROLS_FOREACH_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
 Blockly.Msg["CONTROLS_FOR_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
@@ -430,7 +440,8 @@ Blockly.Msg["LOOPS_HUE"] = "120";
 Blockly.Msg["LISTS_HUE"] = "260";
 Blockly.Msg["LOGIC_HUE"] = "210";
 Blockly.Msg["VARIABLES_HUE"] = "330";
+Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
 Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
-Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "item";

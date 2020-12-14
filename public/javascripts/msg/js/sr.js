@@ -2,15 +2,11 @@
 
 'use strict';
 
-goog.provide('Blockly.Msg.sr');
-
-goog.require('Blockly.Msg');
-
 Blockly.Msg["ADD_COMMENT"] = "Додај коментар";
 Blockly.Msg["CANNOT_DELETE_VARIABLE_PROCEDURE"] = "Није могуће избрисати променљиву „%1” јер је део дефиниције функције „%2”";
 Blockly.Msg["CHANGE_VALUE_TITLE"] = "Промена вредности:";
 Blockly.Msg["CLEAN_UP"] = "Очисти блокове";
-Blockly.Msg["COLLAPSED_WARNINGS_WARNING"] = "Collapsed blocks contain warnings.";  // untranslated
+Blockly.Msg["COLLAPSED_WARNINGS_WARNING"] = "Срушени блокови садрже упозорења.";
 Blockly.Msg["COLLAPSE_ALL"] = "Скупи блокове";
 Blockly.Msg["COLLAPSE_BLOCK"] = "Скупи блок";
 Blockly.Msg["COLOUR_BLEND_COLOUR1"] = "боја 1";
@@ -74,6 +70,19 @@ Blockly.Msg["ENABLE_BLOCK"] = "Омогући блок";
 Blockly.Msg["EXPAND_ALL"] = "Прошири блокове";
 Blockly.Msg["EXPAND_BLOCK"] = "Прошири блок";
 Blockly.Msg["EXTERNAL_INPUTS"] = "Спољашњи улази";
+Blockly.Msg["FUNCTIONS_CALL_TITLE"] = "call";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_BOOLEAN_ARG_NAME"] = "bool";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_CUSTOM_ARG_NAME"] = "arg";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_FUNCTION_NAME"] = "do_something";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_NUMBER_ARG_NAME"] = "num";  // untranslated
+Blockly.Msg["FUNCTIONS_DEFAULT_STRING_ARG_NAME"] = "text";  // untranslated
+Blockly.Msg["FUNCTIONS_EDIT_OPTION"] = "Edit";  // untranslated
+Blockly.Msg["FUNCTIONS_GO_TO_DEFINITION_OPTION"] = "Go to definition";  // untranslated
+Blockly.Msg["FUNCTION_CALL_TOOLTIP"] = "Call a function that was previously defined.";  // untranslated
+Blockly.Msg["FUNCTION_CREATE_NEW"] = "Create a Function";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_ARG_NAME_IS_FUNCTION_NAME"] = "Argument names must not be the same as the function name.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_DUPLICATE_ARG"] = "Functions cannot use the same argument name more than once.";  // untranslated
+Blockly.Msg["FUNCTION_WARNING_EMPTY_NAME"] = "Function and argument names cannot be empty.";  // untranslated
 Blockly.Msg["HELP"] = "Помоћ";
 Blockly.Msg["INLINE_INPUTS"] = "Редни улази";
 Blockly.Msg["IOS_CANCEL"] = "Откажи";
@@ -338,7 +347,7 @@ Blockly.Msg["TEXT_CHARAT_HELPURL"] = "https://github.com/google/blockly/wiki/Tex
 Blockly.Msg["TEXT_CHARAT_LAST"] = "преузми последње слово";
 Blockly.Msg["TEXT_CHARAT_RANDOM"] = "преузми случајно слово";
 Blockly.Msg["TEXT_CHARAT_TAIL"] = "";
-Blockly.Msg["TEXT_CHARAT_TITLE"] = "у тексту %1 %2";
+Blockly.Msg["TEXT_CHARAT_TITLE"] = "in text %1 %2";  // untranslated
 Blockly.Msg["TEXT_CHARAT_TOOLTIP"] = "Враћа слово на одређени положај.";
 Blockly.Msg["TEXT_COUNT_HELPURL"] = "https://github.com/google/blockly/wiki/Text#counting-substrings";
 Blockly.Msg["TEXT_COUNT_MESSAGE0"] = "број %1 у %2";
@@ -393,7 +402,7 @@ Blockly.Msg["TEXT_TRIM_OPERATOR_RIGHT"] = "скратити простор са 
 Blockly.Msg["TEXT_TRIM_TOOLTIP"] = "Враћа копију текста са уклонјеним простором са једног од два краја.";
 Blockly.Msg["TODAY"] = "Данас";
 Blockly.Msg["UNDO"] = "Опозови";
-Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "ставка";
+Blockly.Msg["UNNAMED_KEY"] = "неименовано";
 Blockly.Msg["VARIABLES_GET_CREATE_SET"] = "Направи блок за доделу вредности %1";
 Blockly.Msg["VARIABLES_GET_HELPURL"] = "https://github.com/google/blockly/wiki/Variables#get";  // untranslated
 Blockly.Msg["VARIABLES_GET_TOOLTIP"] = "Враћа вредност ове променљиве.";
@@ -403,6 +412,7 @@ Blockly.Msg["VARIABLES_SET_HELPURL"] = "https://github.com/google/blockly/wiki/V
 Blockly.Msg["VARIABLES_SET_TOOLTIP"] = "Поставља променљиву тако да буде једнака улазу.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS"] = "Променљива под именом ’%1’ већ постоји.";
 Blockly.Msg["VARIABLE_ALREADY_EXISTS_FOR_ANOTHER_TYPE"] = "Променљива под именом ’%1’ већ постоји за други тип: ’%2’.";
+Blockly.Msg["WORKSPACE_ARIA_LABEL"] = "Блоклијев радни простор";
 Blockly.Msg["WORKSPACE_COMMENT_DEFAULT_TEXT"] = "Кажите нешто…";
 Blockly.Msg["CONTROLS_FOREACH_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
 Blockly.Msg["CONTROLS_FOR_INPUT_DO"] = Blockly.Msg["CONTROLS_REPEAT_INPUT_DO"];
@@ -430,7 +440,8 @@ Blockly.Msg["LOOPS_HUE"] = "120";
 Blockly.Msg["LISTS_HUE"] = "260";
 Blockly.Msg["LOGIC_HUE"] = "210";
 Blockly.Msg["VARIABLES_HUE"] = "330";
+Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
 Blockly.Msg["TEXTS_HUE"] = "160";
 Blockly.Msg["PROCEDURES_HUE"] = "290";
 Blockly.Msg["COLOUR_HUE"] = "20";
-Blockly.Msg["VARIABLES_DYNAMIC_HUE"] = "310";
+Blockly.Msg["VARIABLES_DEFAULT_NAME"] = "item";
